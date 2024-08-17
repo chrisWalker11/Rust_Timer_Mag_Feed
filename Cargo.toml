@@ -1,0 +1,19 @@
+[package]
+name = "pso_timer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+egui = "0.22"
+eframe = "0.22"
+rodio = "0.17"
+cpal = "0.14"
+
+[dependencies.winapi]
+version = "0.3"
+features = ["windef", "winuser"]
+
+# This tells Cargo to create a GUI application on Windows
+[package.metadata.windows]
+# Ensure this is treated as a GUI application
+gui = true
